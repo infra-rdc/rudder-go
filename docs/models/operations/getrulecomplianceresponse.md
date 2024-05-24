@@ -1,0 +1,9 @@
+# GetRuleComplianceResponse
+
+
+## Fields
+
+| Field                                                                                                 | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                            | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                    | :heavy_check_mark:                                                                                    | N/A                                                                                                   |
+| `Object`                                                                                              | [*operations.GetRuleComplianceResponseBody](../../models/operations/getrulecomplianceresponsebody.md) | :heavy_minus_sign:                                                                                    | Success                                                                                               |

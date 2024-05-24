@@ -1,0 +1,9 @@
+# ReportingLogic
+
+
+## Fields
+
+| Field                                                                           | Type                                                                            | Required                                                                        | Description                                                                     | Example                                                                         |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| `Type`                                                                          | [*components.TechniqueBlockType](../../models/components/techniqueblocktype.md) | :heavy_minus_sign:                                                              | Kind of reporting logic                                                         | worst                                                                           |
+| `Value`                                                                         | **string*                                                                       | :heavy_minus_sign:                                                              | reporting value used for some reporting logic (i.e. focus)                      | id/name of a component                                                          |

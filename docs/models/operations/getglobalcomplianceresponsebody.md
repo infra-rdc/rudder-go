@@ -1,0 +1,12 @@
+# GetGlobalComplianceResponseBody
+
+Success
+
+
+## Fields
+
+| Field                                                                                        | Type                                                                                         | Required                                                                                     | Description                                                                                  | Example                                                                                      |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `Result`                                                                                     | [operations.GetGlobalComplianceResult](../../models/operations/getglobalcomplianceresult.md) | :heavy_check_mark:                                                                           | Result of the request                                                                        | success                                                                                      |
+| `Action`                                                                                     | [operations.GetGlobalComplianceAction](../../models/operations/getglobalcomplianceaction.md) | :heavy_check_mark:                                                                           | The id of the action                                                                         |                                                                                              |
+| `Data`                                                                                       | [operations.GetGlobalComplianceData](../../models/operations/getglobalcompliancedata.md)     | :heavy_check_mark:                                                                           | N/A                                                                                          |                                                                                              |

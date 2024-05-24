@@ -1,0 +1,9 @@
+# PromoteToRelayResponse
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                      | [components.HTTPMetadata](../../models/components/httpmetadata.md)                              | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `Object`                                                                                        | [*operations.PromoteToRelayResponseBody](../../models/operations/promotetorelayresponsebody.md) | :heavy_minus_sign:                                                                              | Promote response                                                                                |

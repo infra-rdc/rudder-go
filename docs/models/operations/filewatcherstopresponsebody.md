@@ -1,0 +1,12 @@
+# FileWatcherStopResponseBody
+
+Stopped
+
+
+## Fields
+
+| Field                                                                                | Type                                                                                 | Required                                                                             | Description                                                                          | Example                                                                              |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `Result`                                                                             | [operations.FileWatcherStopResult](../../models/operations/filewatcherstopresult.md) | :heavy_check_mark:                                                                   | Result of the request                                                                |                                                                                      |
+| `Action`                                                                             | [operations.FileWatcherStopAction](../../models/operations/filewatcherstopaction.md) | :heavy_check_mark:                                                                   | The id of the action                                                                 |                                                                                      |
+| `Data`                                                                               | *string*                                                                             | :heavy_check_mark:                                                                   | N/A                                                                                  | Incoming inventory watcher stopped                                                   |

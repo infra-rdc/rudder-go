@@ -1,0 +1,18 @@
+# Processes
+
+Process information
+
+
+## Fields
+
+| Field                                                       | Type                                                        | Required                                                    | Description                                                 | Example                                                     |
+| ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| `Pid`                                                       | **int64*                                                    | :heavy_minus_sign:                                          | PID of the process                                          | 3576                                                        |
+| `Tty`                                                       | **string*                                                   | :heavy_minus_sign:                                          | TTY to which the process is                                 | ?                                                           |
+| `Name`                                                      | **string*                                                   | :heavy_minus_sign:                                          | Process name                                                | /usr/sbin/httpd -DFOREGROUND                                |
+| `User`                                                      | **string*                                                   | :heavy_minus_sign:                                          | User account who started the process                        | apache                                                      |
+| `Started`                                                   | [*types.Date](../../types/date.md)                          | :heavy_minus_sign:                                          | Started date and time of the process                        | 2020-02-29 00:24                                            |
+| `Memory`                                                    | **float32*                                                  | :heavy_minus_sign:                                          | Memory allocated to the process (at inventory time)         | 0.4000000059604645                                          |
+| `VirtualMemory`                                             | **int64*                                                    | :heavy_minus_sign:                                          | Virtual memory allocated to the process (at inventory time) | 4380                                                        |
+| `CPUUsage`                                                  | **int64*                                                    | :heavy_minus_sign:                                          | CPU used by the process (at inventory time)                 | 1                                                           |
+| `Description`                                               | **string*                                                   | :heavy_minus_sign:                                          | System provided description about the process               |                                                             |

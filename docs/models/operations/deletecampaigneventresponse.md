@@ -1,0 +1,9 @@
+# DeleteCampaignEventResponse
+
+
+## Fields
+
+| Field                                                                                                     | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                        | :heavy_check_mark:                                                                                        | N/A                                                                                                       |
+| `Object`                                                                                                  | [*operations.DeleteCampaignEventResponseBody](../../models/operations/deletecampaigneventresponsebody.md) | :heavy_minus_sign:                                                                                        | Campaign event details result                                                                             |

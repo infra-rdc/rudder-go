@@ -1,0 +1,9 @@
+# ListDirectivesResponse
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                      | [components.HTTPMetadata](../../models/components/httpmetadata.md)                              | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `Object`                                                                                        | [*operations.ListDirectivesResponseBody](../../models/operations/listdirectivesresponsebody.md) | :heavy_minus_sign:                                                                              | Directives information                                                                          |

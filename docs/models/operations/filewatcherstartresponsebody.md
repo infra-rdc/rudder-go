@@ -1,0 +1,12 @@
+# FileWatcherStartResponseBody
+
+Started
+
+
+## Fields
+
+| Field                                                                                  | Type                                                                                   | Required                                                                               | Description                                                                            | Example                                                                                |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `Result`                                                                               | [operations.FileWatcherStartResult](../../models/operations/filewatcherstartresult.md) | :heavy_check_mark:                                                                     | Result of the request                                                                  |                                                                                        |
+| `Action`                                                                               | [operations.FileWatcherStartAction](../../models/operations/filewatcherstartaction.md) | :heavy_check_mark:                                                                     | The id of the action                                                                   |                                                                                        |
+| `Data`                                                                                 | *string*                                                                               | :heavy_check_mark:                                                                     | N/A                                                                                    | Incoming inventory watcher started                                                     |

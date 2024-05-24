@@ -1,0 +1,9 @@
+# ListTechniquesResponse
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                      | [components.HTTPMetadata](../../models/components/httpmetadata.md)                              | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `Object`                                                                                        | [*operations.ListTechniquesResponseBody](../../models/operations/listtechniquesresponsebody.md) | :heavy_minus_sign:                                                                              | Techniques information                                                                          |

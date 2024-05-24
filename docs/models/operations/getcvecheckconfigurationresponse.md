@@ -1,0 +1,9 @@
+# GetCVECheckConfigurationResponse
+
+
+## Fields
+
+| Field                                                                                                               | Type                                                                                                                | Required                                                                                                            | Description                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                          | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                                  | :heavy_check_mark:                                                                                                  | N/A                                                                                                                 |
+| `Object`                                                                                                            | [*operations.GetCVECheckConfigurationResponseBody](../../models/operations/getcvecheckconfigurationresponsebody.md) | :heavy_minus_sign:                                                                                                  | CVE check config                                                                                                    |

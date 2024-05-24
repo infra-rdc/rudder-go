@@ -1,0 +1,12 @@
+# ListTechniqueVersionDirectivesResponseBody
+
+Techniques information
+
+
+## Fields
+
+| Field                                                                                                              | Type                                                                                                               | Required                                                                                                           | Description                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `Result`                                                                                                           | [operations.ListTechniqueVersionDirectivesResult](../../models/operations/listtechniqueversiondirectivesresult.md) | :heavy_check_mark:                                                                                                 | Result of the request                                                                                              |
+| `Action`                                                                                                           | [operations.ListTechniqueVersionDirectivesAction](../../models/operations/listtechniqueversiondirectivesaction.md) | :heavy_check_mark:                                                                                                 | The id of the action                                                                                               |
+| `Data`                                                                                                             | [operations.ListTechniqueVersionDirectivesData](../../models/operations/listtechniqueversiondirectivesdata.md)     | :heavy_check_mark:                                                                                                 | N/A                                                                                                                |

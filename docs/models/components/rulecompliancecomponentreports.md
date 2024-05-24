@@ -1,0 +1,9 @@
+# RuleComplianceComponentReports
+
+
+## Fields
+
+| Field                                                                            | Type                                                                             | Required                                                                         | Description                                                                      | Example                                                                          |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `Status`                                                                         | *string*                                                                         | :heavy_check_mark:                                                               | N/A                                                                              | successAlreadyOK                                                                 |
+| `Message`                                                                        | *string*                                                                         | :heavy_check_mark:                                                               | N/A                                                                              | The user tutu ( Without any defined full name ) is already present on the system |

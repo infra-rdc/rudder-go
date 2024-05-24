@@ -1,0 +1,13 @@
+# PluginsSettings
+
+
+## Fields
+
+| Field                                                         | Type                                                          | Required                                                      | Description                                                   | Example                                                       |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| `Username`                                                    | *string*                                                      | :heavy_check_mark:                                            | username to use for Rudder account                            | Customer Inc                                                  |
+| `Password`                                                    | *string*                                                      | :heavy_check_mark:                                            | password to access Rudder account                             | some password                                                 |
+| `URL`                                                         | **string*                                                     | :heavy_minus_sign:                                            | URL for getting plugins                                       | https://download.rudder.io/plugins                            |
+| `ProxyUser`                                                   | **string*                                                     | :heavy_minus_sign:                                            | if an authenticated proxy is necessary, username of proxy     | proxy_user                                                    |
+| `ProxyPassword`                                               | **string*                                                     | :heavy_minus_sign:                                            | if an authenticated proxy is necessary, password of the proxy | some password                                                 |
+| `ProxyURL`                                                    | **string*                                                     | :heavy_minus_sign:                                            | proxy URL to use                                              | https://proxy.url                                             |

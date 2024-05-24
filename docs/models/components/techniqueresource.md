@@ -1,0 +1,9 @@
+# TechniqueResource
+
+
+## Fields
+
+| Field                                                                                   | Type                                                                                    | Required                                                                                | Description                                                                             | Example                                                                                 |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `Name`                                                                                  | **string*                                                                               | :heavy_minus_sign:                                                                      | resource name. this is the relative path to the resource                                | conf/my/app/new                                                                         |
+| `State`                                                                                 | **string*                                                                               | :heavy_minus_sign:                                                                      | State of the resource file. it can be a value between new, modified, deleted, untouched | modified                                                                                |

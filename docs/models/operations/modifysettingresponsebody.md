@@ -1,0 +1,13 @@
+# ModifySettingResponseBody
+
+Settings
+
+
+## Fields
+
+| Field                                                                            | Type                                                                             | Required                                                                         | Description                                                                      | Example                                                                          |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `ID`                                                                             | *string*                                                                         | :heavy_check_mark:                                                               | Id of the setting                                                                | global_policy_mode                                                               |
+| `Result`                                                                         | [operations.ModifySettingResult](../../models/operations/modifysettingresult.md) | :heavy_check_mark:                                                               | Result of the request                                                            |                                                                                  |
+| `Action`                                                                         | [operations.ModifySettingAction](../../models/operations/modifysettingaction.md) | :heavy_check_mark:                                                               | The id of the action                                                             |                                                                                  |
+| `Data`                                                                           | [operations.ModifySettingData](../../models/operations/modifysettingdata.md)     | :heavy_check_mark:                                                               | Information about the setting                                                    |                                                                                  |

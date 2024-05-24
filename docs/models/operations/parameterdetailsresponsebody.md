@@ -1,0 +1,13 @@
+# ParameterDetailsResponseBody
+
+Settings
+
+
+## Fields
+
+| Field                                                                                  | Type                                                                                   | Required                                                                               | Description                                                                            | Example                                                                                |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `ID`                                                                                   | *string*                                                                               | :heavy_check_mark:                                                                     | Id of the property                                                                     | rudder_file_edit_footer                                                                |
+| `Result`                                                                               | [operations.ParameterDetailsResult](../../models/operations/parameterdetailsresult.md) | :heavy_check_mark:                                                                     | Result of the request                                                                  |                                                                                        |
+| `Action`                                                                               | [operations.ParameterDetailsAction](../../models/operations/parameterdetailsaction.md) | :heavy_check_mark:                                                                     | The id of the action                                                                   |                                                                                        |
+| `Data`                                                                                 | [operations.ParameterDetailsData](../../models/operations/parameterdetailsdata.md)     | :heavy_check_mark:                                                                     | Parameters                                                                             |                                                                                        |

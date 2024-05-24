@@ -1,0 +1,9 @@
+# GetAllCampaignEventsResponse
+
+
+## Fields
+
+| Field                                                                                                       | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                  | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                          | :heavy_check_mark:                                                                                          | N/A                                                                                                         |
+| `Object`                                                                                                    | [*operations.GetAllCampaignEventsResponseBody](../../models/operations/getallcampaigneventsresponsebody.md) | :heavy_minus_sign:                                                                                          | Campaign event details result                                                                               |

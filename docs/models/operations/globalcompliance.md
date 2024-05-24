@@ -1,0 +1,9 @@
+# GlobalCompliance
+
+
+## Fields
+
+| Field                                                                         | Type                                                                          | Required                                                                      | Description                                                                   | Example                                                                       |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `Compliance`                                                                  | *float64*                                                                     | :heavy_check_mark:                                                            | Global compliance level (`-1` when no policies are defined)                   | 57                                                                            |
+| `ComplianceDetails`                                                           | [*operations.ComplianceDetails](../../models/operations/compliancedetails.md) | :heavy_minus_sign:                                                            | N/A                                                                           |                                                                               |

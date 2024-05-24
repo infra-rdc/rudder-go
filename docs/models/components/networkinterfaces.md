@@ -1,0 +1,15 @@
+# NetworkInterfaces
+
+
+## Fields
+
+| Field                                                 | Type                                                  | Required                                              | Description                                           | Example                                               |
+| ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
+| `Name`                                                | **string*                                             | :heavy_minus_sign:                                    | Interface name (for ex "eth0")                        | eth0                                                  |
+| `Mask`                                                | []*string*                                            | :heavy_minus_sign:                                    | N/A                                                   |                                                       |
+| `Type`                                                | **string*                                             | :heavy_minus_sign:                                    | Information about the type of network interface       | ethernet                                              |
+| `Speed`                                               | **string*                                             | :heavy_minus_sign:                                    | Information about synchronization speed               | 1000                                                  |
+| `Status`                                              | **string*                                             | :heavy_minus_sign:                                    | network interface status (enabled or not, up or down) | Up                                                    |
+| `DhcpServer`                                          | **string*                                             | :heavy_minus_sign:                                    | DHCP server managing that network interface           | 192.168.34.5                                          |
+| `MacAddress`                                          | **string*                                             | :heavy_minus_sign:                                    | MAC address of the network interface                  | 08:00:27:6f:5c:14                                     |
+| `IPAddresses`                                         | []*string*                                            | :heavy_minus_sign:                                    | IP addresses of the network interface                 |                                                       |

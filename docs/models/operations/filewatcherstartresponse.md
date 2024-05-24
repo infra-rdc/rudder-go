@@ -1,0 +1,9 @@
+# FileWatcherStartResponse
+
+
+## Fields
+
+| Field                                                                                               | Type                                                                                                | Required                                                                                            | Description                                                                                         |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                          | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                  | :heavy_check_mark:                                                                                  | N/A                                                                                                 |
+| `Object`                                                                                            | [*operations.FileWatcherStartResponseBody](../../models/operations/filewatcherstartresponsebody.md) | :heavy_minus_sign:                                                                                  | Started                                                                                             |

@@ -1,0 +1,13 @@
+# Software
+
+
+## Fields
+
+| Field                                                     | Type                                                      | Required                                                  | Description                                               | Example                                                   |
+| --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
+| `Name`                                                    | **string*                                                 | :heavy_minus_sign:                                        | Name of the software (as reported by the node)            | libcurl                                                   |
+| `Version`                                                 | **string*                                                 | :heavy_minus_sign:                                        | Version of the software                                   | 7.29.0-54.el7_7.2                                         |
+| `Editor`                                                  | **string*                                                 | :heavy_minus_sign:                                        | Editor of the software                                    | CentOS                                                    |
+| `Description`                                             | **string*                                                 | :heavy_minus_sign:                                        | A description of the software                             | A library for getting files from web servers              |
+| `ReleaseDate`                                             | [*types.Date](../../types/date.md)                        | :heavy_minus_sign:                                        | Release date of the software                              |                                                           |
+| `License`                                                 | [*components.License](../../models/components/license.md) | :heavy_minus_sign:                                        | Information about the license                             |                                                           |

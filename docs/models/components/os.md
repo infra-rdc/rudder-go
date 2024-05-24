@@ -1,0 +1,12 @@
+# Os
+
+
+## Fields
+
+| Field                                                       | Type                                                        | Required                                                    | Description                                                 | Example                                                     |
+| ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| `Type`                                                      | [components.OsType](../../models/components/ostype.md)      | :heavy_check_mark:                                          | N/A                                                         |                                                             |
+| `Name`                                                      | [components.Name](../../models/components/name.md)          | :heavy_check_mark:                                          | For Linux, a distribution, for Windows, the commercial name |                                                             |
+| `Version`                                                   | *string*                                                    | :heavy_check_mark:                                          | A string representation of the version                      | 9.5                                                         |
+| `FullName`                                                  | *string*                                                    | :heavy_check_mark:                                          | The long description name of the os                         | Debian GNU/Linux 9 (stretch)                                |
+| `ServicePack`                                               | **string*                                                   | :heavy_minus_sign:                                          | a service pack informationnal string                        |                                                             |

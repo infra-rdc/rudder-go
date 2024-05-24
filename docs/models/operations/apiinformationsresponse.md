@@ -1,0 +1,9 @@
+# APIInformationsResponse
+
+
+## Fields
+
+| Field                                                                                             | Type                                                                                              | Required                                                                                          | Description                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                        | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                | :heavy_check_mark:                                                                                | N/A                                                                                               |
+| `Object`                                                                                          | [*operations.APIInformationsResponseBody](../../models/operations/apiinformationsresponsebody.md) | :heavy_minus_sign:                                                                                | API Endpoint information                                                                          |

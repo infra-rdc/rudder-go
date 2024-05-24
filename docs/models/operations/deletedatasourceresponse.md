@@ -1,0 +1,9 @@
+# DeleteDataSourceResponse
+
+
+## Fields
+
+| Field                                                                                               | Type                                                                                                | Required                                                                                            | Description                                                                                         |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                          | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                  | :heavy_check_mark:                                                                                  | N/A                                                                                                 |
+| `Object`                                                                                            | [*operations.DeleteDataSourceResponseBody](../../models/operations/deletedatasourceresponsebody.md) | :heavy_minus_sign:                                                                                  | Data source information                                                                             |

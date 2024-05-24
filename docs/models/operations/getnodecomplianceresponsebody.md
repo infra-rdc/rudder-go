@@ -1,0 +1,12 @@
+# GetNodeComplianceResponseBody
+
+Success
+
+
+## Fields
+
+| Field                                                                                    | Type                                                                                     | Required                                                                                 | Description                                                                              | Example                                                                                  |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `Result`                                                                                 | [operations.GetNodeComplianceResult](../../models/operations/getnodecomplianceresult.md) | :heavy_check_mark:                                                                       | Result of the request                                                                    | success                                                                                  |
+| `Action`                                                                                 | [operations.GetNodeComplianceAction](../../models/operations/getnodecomplianceaction.md) | :heavy_check_mark:                                                                       | The id of the action                                                                     |                                                                                          |
+| `Data`                                                                                   | [operations.GetNodeComplianceData](../../models/operations/getnodecompliancedata.md)     | :heavy_check_mark:                                                                       | N/A                                                                                      |                                                                                          |

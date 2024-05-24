@@ -1,0 +1,10 @@
+# AddedUser
+
+
+## Fields
+
+| Field                                                                     | Type                                                                      | Required                                                                  | Description                                                               | Example                                                                   |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `Username`                                                                | **string*                                                                 | :heavy_minus_sign:                                                        | N/A                                                                       | John Doe                                                                  |
+| `Password`                                                                | **string*                                                                 | :heavy_minus_sign:                                                        | this password will be hashed for you if the `isPreHashed` is set on false | passwdWillBeStoredHashed                                                  |
+| `Role`                                                                    | []*string*                                                                | :heavy_minus_sign:                                                        | defined user's permissions                                                |                                                                           |

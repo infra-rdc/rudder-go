@@ -1,0 +1,12 @@
+# GetRuleComplianceResponseBody
+
+Success
+
+
+## Fields
+
+| Field                                                                                    | Type                                                                                     | Required                                                                                 | Description                                                                              | Example                                                                                  |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `Result`                                                                                 | [operations.GetRuleComplianceResult](../../models/operations/getrulecomplianceresult.md) | :heavy_check_mark:                                                                       | Result of the request                                                                    | success                                                                                  |
+| `Action`                                                                                 | [operations.GetRuleComplianceAction](../../models/operations/getrulecomplianceaction.md) | :heavy_check_mark:                                                                       | The id of the action                                                                     |                                                                                          |
+| `Data`                                                                                   | [operations.GetRuleComplianceData](../../models/operations/getrulecompliancedata.md)     | :heavy_check_mark:                                                                       | N/A                                                                                      |                                                                                          |

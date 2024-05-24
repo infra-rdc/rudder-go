@@ -1,0 +1,9 @@
+# DeclineChangeRequestResponse
+
+
+## Fields
+
+| Field                                                                                                       | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                  | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                          | :heavy_check_mark:                                                                                          | N/A                                                                                                         |
+| `Object`                                                                                                    | [*operations.DeclineChangeRequestResponseBody](../../models/operations/declinechangerequestresponsebody.md) | :heavy_minus_sign:                                                                                          | Change requests information                                                                                 |

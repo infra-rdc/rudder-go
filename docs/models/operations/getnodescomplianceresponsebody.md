@@ -1,0 +1,12 @@
+# GetNodesComplianceResponseBody
+
+Success
+
+
+## Fields
+
+| Field                                                                                      | Type                                                                                       | Required                                                                                   | Description                                                                                | Example                                                                                    |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `Result`                                                                                   | [operations.GetNodesComplianceResult](../../models/operations/getnodescomplianceresult.md) | :heavy_check_mark:                                                                         | Result of the request                                                                      | success                                                                                    |
+| `Action`                                                                                   | [operations.GetNodesComplianceAction](../../models/operations/getnodescomplianceaction.md) | :heavy_check_mark:                                                                         | The id of the action                                                                       |                                                                                            |
+| `Data`                                                                                     | [operations.GetNodesComplianceData](../../models/operations/getnodescompliancedata.md)     | :heavy_check_mark:                                                                         | N/A                                                                                        |                                                                                            |

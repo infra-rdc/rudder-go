@@ -1,0 +1,9 @@
+# TechniqueRevisionsResponse
+
+
+## Fields
+
+| Field                                                                                                   | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                              | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                      | :heavy_check_mark:                                                                                      | N/A                                                                                                     |
+| `Object`                                                                                                | [*operations.TechniqueRevisionsResponseBody](../../models/operations/techniquerevisionsresponsebody.md) | :heavy_minus_sign:                                                                                      | Versions information                                                                                    |

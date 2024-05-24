@@ -1,0 +1,12 @@
+# UploadInventoryResponseBody
+
+Inventory uploaded
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     | Example                                                                                         |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `Result`                                                                                        | [operations.UploadInventoryResult](../../models/operations/uploadinventoryresult.md)            | :heavy_check_mark:                                                                              | Result of the request                                                                           |                                                                                                 |
+| `Action`                                                                                        | [operations.UploadInventoryAction](../../models/operations/uploadinventoryaction.md)            | :heavy_check_mark:                                                                              | The id of the action                                                                            |                                                                                                 |
+| `Data`                                                                                          | *string*                                                                                        | :heavy_check_mark:                                                                              | N/A                                                                                             | Inventory 'file.xml' for Node 'c1bab9fc-bcf6-4d59-a397-84c8e2fc06c0' added to processing queue. |

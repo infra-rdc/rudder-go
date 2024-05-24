@@ -1,0 +1,9 @@
+# GetSettingResponse
+
+
+## Fields
+
+| Field                                                                                   | Type                                                                                    | Required                                                                                | Description                                                                             |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                              | [components.HTTPMetadata](../../models/components/httpmetadata.md)                      | :heavy_check_mark:                                                                      | N/A                                                                                     |
+| `Object`                                                                                | [*operations.GetSettingResponseBody](../../models/operations/getsettingresponsebody.md) | :heavy_minus_sign:                                                                      | Settings                                                                                |

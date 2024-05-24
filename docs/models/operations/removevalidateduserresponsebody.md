@@ -1,0 +1,12 @@
+# RemoveValidatedUserResponseBody
+
+Removed user
+
+
+## Fields
+
+| Field                                                                                        | Type                                                                                         | Required                                                                                     | Description                                                                                  | Example                                                                                      |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `Result`                                                                                     | [operations.RemoveValidatedUserResult](../../models/operations/removevalidateduserresult.md) | :heavy_check_mark:                                                                           | Result of the request                                                                        |                                                                                              |
+| `Action`                                                                                     | [operations.RemoveValidatedUserAction](../../models/operations/removevalidateduseraction.md) | :heavy_check_mark:                                                                           | The id of the action                                                                         |                                                                                              |
+| `Data`                                                                                       | *string*                                                                                     | :heavy_check_mark:                                                                           | the user removed from validated list                                                         | John Do                                                                                      |

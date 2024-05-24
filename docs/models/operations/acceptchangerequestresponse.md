@@ -1,0 +1,9 @@
+# AcceptChangeRequestResponse
+
+
+## Fields
+
+| Field                                                                                                     | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                        | :heavy_check_mark:                                                                                        | N/A                                                                                                       |
+| `Object`                                                                                                  | [*operations.AcceptChangeRequestResponseBody](../../models/operations/acceptchangerequestresponsebody.md) | :heavy_minus_sign:                                                                                        | Change requests information                                                                               |

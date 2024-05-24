@@ -1,0 +1,13 @@
+# UpdateParameterResponseBody
+
+Settings
+
+
+## Fields
+
+| Field                                                                                | Type                                                                                 | Required                                                                             | Description                                                                          | Example                                                                              |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `ID`                                                                                 | *string*                                                                             | :heavy_check_mark:                                                                   | Id of the global property                                                            | rudder_file_edit_footer                                                              |
+| `Result`                                                                             | [operations.UpdateParameterResult](../../models/operations/updateparameterresult.md) | :heavy_check_mark:                                                                   | Result of the request                                                                |                                                                                      |
+| `Action`                                                                             | [operations.UpdateParameterAction](../../models/operations/updateparameteraction.md) | :heavy_check_mark:                                                                   | The id of the action                                                                 |                                                                                      |
+| `Data`                                                                               | [operations.UpdateParameterData](../../models/operations/updateparameterdata.md)     | :heavy_check_mark:                                                                   | Parameters                                                                           |                                                                                      |

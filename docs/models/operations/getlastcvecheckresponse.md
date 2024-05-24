@@ -1,0 +1,9 @@
+# GetLastCVECheckResponse
+
+
+## Fields
+
+| Field                                                                                             | Type                                                                                              | Required                                                                                          | Description                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                        | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                | :heavy_check_mark:                                                                                | N/A                                                                                               |
+| `Object`                                                                                          | [*operations.GetLastCVECheckResponseBody](../../models/operations/getlastcvecheckresponsebody.md) | :heavy_minus_sign:                                                                                | Last CVE check                                                                                    |

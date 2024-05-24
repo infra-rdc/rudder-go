@@ -1,0 +1,12 @@
+# UpdateCVECheckConfigurationResponseBody
+
+new CVE check config
+
+
+## Fields
+
+| Field                                                                                                        | Type                                                                                                         | Required                                                                                                     | Description                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| `Result`                                                                                                     | [operations.UpdateCVECheckConfigurationResult](../../models/operations/updatecvecheckconfigurationresult.md) | :heavy_check_mark:                                                                                           | Result of the request                                                                                        |
+| `Action`                                                                                                     | [operations.UpdateCVECheckConfigurationAction](../../models/operations/updatecvecheckconfigurationaction.md) | :heavy_check_mark:                                                                                           | The id of the action                                                                                         |
+| `Data`                                                                                                       | [operations.UpdateCVECheckConfigurationData](../../models/operations/updatecvecheckconfigurationdata.md)     | :heavy_check_mark:                                                                                           | N/A                                                                                                          |

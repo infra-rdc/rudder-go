@@ -1,0 +1,15 @@
+# NodeFullOs
+
+Information about the operating system
+
+
+## Fields
+
+| Field                                                                  | Type                                                                   | Required                                                               | Description                                                            | Example                                                                |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| `Type`                                                                 | [components.NodeFullOsType](../../models/components/nodefullostype.md) | :heavy_check_mark:                                                     | Family of the OS                                                       | Linux                                                                  |
+| `Name`                                                                 | *string*                                                               | :heavy_check_mark:                                                     | Operating system name (distribution on Linux, etc.)                    | Centos                                                                 |
+| `Version`                                                              | *string*                                                               | :heavy_check_mark:                                                     | OS version                                                             | 7.6.1810                                                               |
+| `FullName`                                                             | *string*                                                               | :heavy_check_mark:                                                     | Full operating system name                                             | CentOS Linux release 7.6.1810 (Core)                                   |
+| `ServicePack`                                                          | **string*                                                              | :heavy_minus_sign:                                                     | If relevant, the service pack of the OS                                | 3                                                                      |
+| `KernelVersion`                                                        | *string*                                                               | :heavy_check_mark:                                                     | Version of the OS kernel                                               | 3.10.0-957.1.3.el7.x86_64                                              |

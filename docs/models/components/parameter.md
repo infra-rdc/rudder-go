@@ -1,0 +1,11 @@
+# Parameter
+
+
+## Fields
+
+| Field                                                           | Type                                                            | Required                                                        | Description                                                     | Example                                                         |
+| --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
+| `ID`                                                            | *string*                                                        | :heavy_check_mark:                                              | Name of the parameter                                           | rudder_file_edit_footer                                         |
+| `Value`                                                         | *any*                                                           | :heavy_minus_sign:                                              | Value of the parameter                                          | ### End of file managed by Rudder ###                           |
+| `Description`                                                   | **string*                                                       | :heavy_minus_sign:                                              | Description of the parameter                                    | Default inform message put in footer of managed files by Rudder |
+| `Overridable`                                                   | **bool*                                                         | :heavy_minus_sign:                                              | Is the global parameter overridable by node                     | false                                                           |
