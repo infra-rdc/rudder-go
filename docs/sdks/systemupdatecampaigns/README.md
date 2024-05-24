@@ -23,15 +23,15 @@ Get a campaign result history
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := operations.GetCampaignResultsRequest{
         ID: "0076a379-f32d-4732-9e91-33ab219d8fde",
@@ -72,14 +72,14 @@ Get a campaign event result
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var id string = "0076a379-f32d-4732-9e91-33ab219d8fde"
     ctx := context.Background()
@@ -118,14 +118,14 @@ Get detailed campaign event result for a Node
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var id string = "0076a379-f32d-4732-9e91-33ab219d8fde"
 

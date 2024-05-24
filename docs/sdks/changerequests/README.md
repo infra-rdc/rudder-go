@@ -28,14 +28,14 @@ List all change requests
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -73,14 +73,14 @@ Get a change request details
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var changeRequestID int64 = 37
     ctx := context.Background()
@@ -119,14 +119,14 @@ Refuse a change request
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var changeRequestID int64 = 37
     ctx := context.Background()
@@ -165,15 +165,15 @@ Update a change request
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var changeRequestID int64 = 37
 
@@ -215,15 +215,15 @@ Accept a change request
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var changeRequestID int64 = 37
 
@@ -267,14 +267,14 @@ List all validated and unvalidated users
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -312,15 +312,15 @@ Add and remove user from validated users
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := operations.SaveWorkflowUserRequestBody{
         ValidatedUsers: []string{
@@ -363,14 +363,14 @@ The user is again subject to workflow validation
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var username string = "JaneDoe"
     ctx := context.Background()

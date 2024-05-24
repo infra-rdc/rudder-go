@@ -27,14 +27,14 @@ Get the configuration of all present data sources
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -72,14 +72,14 @@ Update properties from all data source on all nodes. The call is asynchronous.
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -117,14 +117,14 @@ Update properties from all data source on all nodes. The call is asynchronous.
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var datasourceID string = "test-data-source"
     ctx := context.Background()
@@ -163,14 +163,14 @@ Get the configuration of a data source
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var datasourceID string = "test-data-source"
     ctx := context.Background()
@@ -209,14 +209,14 @@ Delete a data source configuration
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var datasourceID string = "test-data-source"
     ctx := context.Background()
@@ -255,14 +255,14 @@ Update properties from all data sources on one nodes. The call is asynchronous.
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
     ctx := context.Background()
@@ -301,14 +301,14 @@ Update properties from a data source on one nodes. The call is asynchronous.
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
 

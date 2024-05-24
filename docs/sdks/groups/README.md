@@ -28,14 +28,14 @@ List all groups
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -73,30 +73,30 @@ Create a new group based in provided parameters
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var request *components.GroupNew = &components.GroupNew{
-        Source: ruddergo.String("b9f6d98a-28bc-4d80-90f7-d2f14269e215"),
+        Source: rudder.String("b9f6d98a-28bc-4d80-90f7-d2f14269e215"),
         Category: "e17ecf6a-a9f2-44de-a97c-116d24d30ff4",
-        ID: ruddergo.String("32d013f7-b6d8-46c8-99d3-016307fa66c0"),
+        ID: rudder.String("32d013f7-b6d8-46c8-99d3-016307fa66c0"),
         DisplayName: "Ubuntu 18.04 nodes",
-        Description: ruddergo.String("Documentation for the group"),
+        Description: rudder.String("Documentation for the group"),
         Query: &components.GroupNewQuery{
             Composition: components.GroupNewCompositionAnd.ToPointer(),
             Where: []components.GroupNewWhere{
                 components.GroupNewWhere{
-                    ObjectType: ruddergo.String("node"),
-                    Attribute: ruddergo.String("OS"),
-                    Comparator: ruddergo.String("eq"),
-                    Value: ruddergo.String("Linux"),
+                    ObjectType: rudder.String("node"),
+                    Attribute: rudder.String("OS"),
+                    Comparator: rudder.String("eq"),
+                    Value: rudder.String("Linux"),
                 },
             },
         },
@@ -143,14 +143,14 @@ Get detailed information about a group category
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var groupCategoryID string = "e0a311fa-f7b2-4f9e-89a9-db517b9c6b90"
     ctx := context.Background()
@@ -189,14 +189,14 @@ Delete a group category. It must have no child groups and no children categories
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var groupCategoryID string = "e0a311fa-f7b2-4f9e-89a9-db517b9c6b90"
     ctx := context.Background()
@@ -235,22 +235,22 @@ Update detailed information about a group category
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var groupCategoryID string = "e0a311fa-f7b2-4f9e-89a9-db517b9c6b90"
 
     groupCategoryUpdate := components.GroupCategoryUpdate{
         Parent: "b9f6d98a-28bc-4d80-90f7-d2f14269e215",
         Name: "Hardware groups",
-        Description: ruddergo.String("Nodes by hardware provider"),
+        Description: rudder.String("Nodes by hardware provider"),
     }
     ctx := context.Background()
     res, err := s.Groups.UpdateGroupCategory(ctx, groupCategoryID, groupCategoryUpdate)
@@ -289,14 +289,14 @@ Get all available groups and their categories in a tree
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -334,14 +334,14 @@ Get detailed information about a group
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var groupID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
     ctx := context.Background()
@@ -380,30 +380,30 @@ Update detailed information about a group
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var groupID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
 
     groupUpdate := components.GroupUpdate{
-        Category: ruddergo.String("e17ecf6a-a9f2-44de-a97c-116d24d30ff4"),
-        DisplayName: ruddergo.String("Ubuntu 18.04 nodes"),
-        Description: ruddergo.String("Documentation for the group"),
+        Category: rudder.String("e17ecf6a-a9f2-44de-a97c-116d24d30ff4"),
+        DisplayName: rudder.String("Ubuntu 18.04 nodes"),
+        Description: rudder.String("Documentation for the group"),
         Query: &components.GroupUpdateQuery{
             Composition: components.GroupUpdateCompositionAnd.ToPointer(),
             Where: []components.GroupUpdateWhere{
                 components.GroupUpdateWhere{
-                    ObjectType: ruddergo.String("node"),
-                    Attribute: ruddergo.String("OS"),
-                    Comparator: ruddergo.String("eq"),
-                    Value: ruddergo.String("Linux"),
+                    ObjectType: rudder.String("node"),
+                    Attribute: rudder.String("OS"),
+                    Comparator: rudder.String("eq"),
+                    Value: rudder.String("Linux"),
                 },
             },
         },
@@ -445,14 +445,14 @@ Update detailed information about a group
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var groupID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
     ctx := context.Background()
@@ -491,14 +491,14 @@ Recompute the content of a group
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var groupID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
     ctx := context.Background()

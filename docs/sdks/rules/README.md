@@ -22,14 +22,14 @@ Get detailed information about a rule category
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var ruleCategoryID string = "e0a311fa-f7b2-4f9e-89a9-db517b9c6b90"
     ctx := context.Background()
@@ -68,14 +68,14 @@ Delete a group category. It must have no child groups and no children categories
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var ruleCategoryID string = "e0a311fa-f7b2-4f9e-89a9-db517b9c6b90"
     ctx := context.Background()
@@ -114,22 +114,22 @@ Update detailed information about a rule category
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var ruleCategoryID string = "e0a311fa-f7b2-4f9e-89a9-db517b9c6b90"
 
     ruleCategoryUpdate := components.RuleCategoryUpdate{
         Parent: "b9f6d98a-28bc-4d80-90f7-d2f14269e215",
         Name: "Security policies",
-        Description: ruddergo.String("Baseline applying CIS guidelines"),
+        Description: rudder.String("Baseline applying CIS guidelines"),
     }
     ctx := context.Background()
     res, err := s.Rules.UpdateRuleCategory(ctx, ruleCategoryID, ruleCategoryUpdate)
@@ -168,14 +168,14 @@ Get all available rules and their categories in a tree
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()

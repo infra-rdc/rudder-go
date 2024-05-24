@@ -25,14 +25,14 @@ Get the list of all secrets without their value
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -70,20 +70,20 @@ Update a secret and override the value, the name cannot be overridden
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := components.Secrets{
-        Name: ruddergo.String("secret-password"),
-        Description: ruddergo.String("Password of my super secret user account"),
-        Value: ruddergo.String("nj-k;EO32!kFWewn2Nk,u"),
+        Name: rudder.String("secret-password"),
+        Description: rudder.String("Password of my super secret user account"),
+        Value: rudder.String("nj-k;EO32!kFWewn2Nk,u"),
     }
     ctx := context.Background()
     res, err := s.SecretManagement.UpdateSecret(ctx, request)
@@ -121,20 +121,20 @@ Add a secret
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := components.Secrets{
-        Name: ruddergo.String("secret-password"),
-        Description: ruddergo.String("Password of my super secret user account"),
-        Value: ruddergo.String("nj-k;EO32!kFWewn2Nk,u"),
+        Name: rudder.String("secret-password"),
+        Description: rudder.String("Password of my super secret user account"),
+        Value: rudder.String("nj-k;EO32!kFWewn2Nk,u"),
     }
     ctx := context.Background()
     res, err := s.SecretManagement.AddSecret(ctx, request)
@@ -172,14 +172,14 @@ Get one secret by its unique name
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var name string = "<value>"
     ctx := context.Background()
@@ -218,14 +218,14 @@ Remove the secret by its unique name
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var name string = "<value>"
     ctx := context.Background()

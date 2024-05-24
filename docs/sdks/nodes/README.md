@@ -29,7 +29,7 @@ Get information about the nodes managed by the target server
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
@@ -37,28 +37,28 @@ import(
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := operations.ListAcceptedNodesRequest{
-        Include: ruddergo.String("minimal"),
+        Include: rudder.String("minimal"),
         Query: &components.NodeQuery{
             Composition: components.CompositionAnd.ToPointer(),
             Where: []components.Where{
                 components.Where{
-                    ObjectType: ruddergo.String("node"),
-                    Attribute: ruddergo.String("OS"),
-                    Comparator: ruddergo.String("eq"),
-                    Value: ruddergo.String("Linux"),
+                    ObjectType: rudder.String("node"),
+                    Attribute: rudder.String("OS"),
+                    Comparator: rudder.String("eq"),
+                    Value: rudder.String("Linux"),
                 },
             },
         },
         Where: []components.NodeWhere{
             components.NodeWhere{
-                ObjectType: ruddergo.String("node"),
-                Attribute: ruddergo.String("OS"),
-                Comparator: ruddergo.String("eq"),
-                Value: ruddergo.String("Linux"),
+                ObjectType: rudder.String("node"),
+                Attribute: rudder.String("OS"),
+                Comparator: rudder.String("eq"),
+                Value: rudder.String("Linux"),
             },
         },
         Composition: components.NodeCompositionAnd.ToPointer(),
@@ -99,15 +99,15 @@ Use the provided array of node information to create new nodes
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := []components.NodeAdd{
         components.NodeAdd{
@@ -120,11 +120,11 @@ func main() {
                 Version: "9.5",
                 FullName: "Debian GNU/Linux 9 (stretch)",
             },
-            PolicyServerID: ruddergo.String("root"),
+            PolicyServerID: rudder.String("root"),
             Machine: &components.NodeAddMachine{
                 Type: components.NodeAddTypeVirtual,
-                Manufacturer: ruddergo.String("corp inc."),
-                SerialNumber: ruddergo.String("ece12459-2b90-49c9-ab1e-72e38f797421"),
+                Manufacturer: rudder.String("corp inc."),
+                SerialNumber: rudder.String("ece12459-2b90-49c9-ab1e-72e38f797421"),
             },
             AgentKey: &components.AgentKey{
                 Value: "-----BEGIN CERTIFICATE-----
@@ -182,14 +182,14 @@ This API allows to trigger an agent run on all nodes. Response contains a json s
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -227,7 +227,7 @@ Get information about the nodes pending acceptation
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
@@ -235,28 +235,28 @@ import(
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := operations.ListPendingNodesRequest{
-        Include: ruddergo.String("minimal"),
+        Include: rudder.String("minimal"),
         Query: &components.NodeQuery{
             Composition: components.CompositionAnd.ToPointer(),
             Where: []components.Where{
                 components.Where{
-                    ObjectType: ruddergo.String("node"),
-                    Attribute: ruddergo.String("OS"),
-                    Comparator: ruddergo.String("eq"),
-                    Value: ruddergo.String("Linux"),
+                    ObjectType: rudder.String("node"),
+                    Attribute: rudder.String("OS"),
+                    Comparator: rudder.String("eq"),
+                    Value: rudder.String("Linux"),
                 },
             },
         },
         Where: []components.NodeWhere{
             components.NodeWhere{
-                ObjectType: ruddergo.String("node"),
-                Attribute: ruddergo.String("OS"),
-                Comparator: ruddergo.String("eq"),
-                Value: ruddergo.String("Linux"),
+                ObjectType: rudder.String("node"),
+                Attribute: rudder.String("OS"),
+                Comparator: rudder.String("eq"),
+                Value: rudder.String("Linux"),
             },
         },
         Composition: components.NodeCompositionAnd.ToPointer(),
@@ -297,15 +297,15 @@ Accept or refuse a pending node
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
 
@@ -349,14 +349,14 @@ Get acceptation status (pending, accepted, deleted, unknown) of a list of nodes
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var ids string = "8403353b-42c4-46f5-a08d-bc77a1a0bad9,root"
     ctx := context.Background()
@@ -395,18 +395,18 @@ Get details about a given node
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
 
-    var include *string = ruddergo.String("minimal")
+    var include *string = rudder.String("minimal")
     ctx := context.Background()
     res, err := s.Nodes.NodeDetails(ctx, nodeID, include)
     if err != nil {
@@ -444,15 +444,15 @@ Update node settings and properties
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
 
@@ -508,15 +508,15 @@ Remove a node from the Rudder server. It won't be managed anymore.
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
 
@@ -558,14 +558,14 @@ This API allows to trigger an agent run on the target node. Response is a stream
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
     ctx := context.Background()
@@ -604,14 +604,14 @@ This API returns all node properties for a node, including group inherited ones.
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
     ctx := context.Background()

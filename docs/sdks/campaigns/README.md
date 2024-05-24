@@ -24,7 +24,7 @@ Get all campaign events
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
@@ -32,8 +32,8 @@ import(
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := operations.GetAllCampaignEventsRequest{
         CampaignType: components.CampaignTypeSystemUpdate.ToPointer(),
@@ -76,14 +76,14 @@ Get a campaign event details
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var id string = "0076a379-f32d-4732-9e91-33ab219d8fde"
     ctx := context.Background()
@@ -122,14 +122,14 @@ Update an existing event
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var id string = "0076a379-f32d-4732-9e91-33ab219d8fde"
     ctx := context.Background()
@@ -168,14 +168,14 @@ Delete a campaign event details
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var id string = "0076a379-f32d-4732-9e91-33ab219d8fde"
     ctx := context.Background()
@@ -214,7 +214,7 @@ Get campaign events for a campaign
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
@@ -222,8 +222,8 @@ import(
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := operations.GetEventsCampaignRequest{
         ID: "0076a379-f32d-4732-9e91-33ab219d8fde",
@@ -266,14 +266,14 @@ Schedule a campaign event for a campaign
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var id string = "0076a379-f32d-4732-9e91-33ab219d8fde"
     ctx := context.Background()

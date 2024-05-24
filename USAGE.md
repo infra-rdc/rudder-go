@@ -4,13 +4,13 @@ package main
 
 import (
 	"context"
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"log"
 )
 
 func main() {
-	s := ruddergo.New(
-		ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+	s := rudder.New(
+		rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 
 	ctx := context.Background()

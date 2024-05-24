@@ -22,14 +22,14 @@ List all directives
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -67,31 +67,31 @@ Create a new directive from provided parameters. You can specify a source direct
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/components"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var request *components.DirectiveNew = &components.DirectiveNew{
-        Source: ruddergo.String("b9f6d98a-28bc-4d80-90f7-d2f14269e215"),
-        ID: ruddergo.String("91252ea2-feb2-412d-8599-c6945fee02c4"),
-        DisplayName: ruddergo.String("91252ea2-feb2-412d-8599-c6945fee02c4"),
-        ShortDescription: ruddergo.String("91252ea2-feb2-412d-8599-c6945fee02c4"),
-        LongDescription: ruddergo.String("# Documentation
+        Source: rudder.String("b9f6d98a-28bc-4d80-90f7-d2f14269e215"),
+        ID: rudder.String("91252ea2-feb2-412d-8599-c6945fee02c4"),
+        DisplayName: rudder.String("91252ea2-feb2-412d-8599-c6945fee02c4"),
+        ShortDescription: rudder.String("91252ea2-feb2-412d-8599-c6945fee02c4"),
+        LongDescription: rudder.String("# Documentation
     * [Ticket link](https://tickets.example.com/issues/3456)"),
-        TechniqueName: ruddergo.String("userManagement"),
-        TechniqueVersion: ruddergo.String("8.0"),
-        Priority: ruddergo.Int64(5),
-        Enabled: ruddergo.Bool(true),
-        System: ruddergo.Bool(false),
+        TechniqueName: rudder.String("userManagement"),
+        TechniqueVersion: rudder.String("8.0"),
+        Priority: rudder.Int64(5),
+        Enabled: rudder.Bool(true),
+        System: rudder.Bool(false),
         Tags: []components.DirectiveNewTags{
             components.DirectiveNewTags{
-                Name: ruddergo.String("value"),
+                Name: rudder.String("value"),
             },
         },
         Parameters: &components.DirectiveNewParameters{},
@@ -132,14 +132,14 @@ Get all information about a given directive
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var directiveID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
     ctx := context.Background()
@@ -178,14 +178,14 @@ Delete a directive
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var directiveID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
     ctx := context.Background()

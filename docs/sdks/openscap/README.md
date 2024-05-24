@@ -21,14 +21,14 @@ Get latest OpenSCAP report for the given node
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
     ctx := context.Background()

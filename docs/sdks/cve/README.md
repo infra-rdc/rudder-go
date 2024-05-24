@@ -29,14 +29,14 @@ Get all CVE details
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -74,14 +74,14 @@ Trigger a CVE check
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -119,14 +119,14 @@ Get CVE check config
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -164,18 +164,18 @@ Update cve check config
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var request *operations.UpdateCVECheckConfigurationRequestBody = &operations.UpdateCVECheckConfigurationRequestBody{
-        URL: ruddergo.String("https://api.rudder.io/cve/v1/"),
+        URL: rudder.String("https://api.rudder.io/cve/v1/"),
     }
     ctx := context.Background()
     res, err := s.Cve.UpdateCVECheckConfiguration(ctx, request)
@@ -213,15 +213,15 @@ Get last CVE check result
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     request := operations.GetLastCVECheckRequest{}
     ctx := context.Background()
@@ -260,23 +260,23 @@ Get CVE details, from a list passed as parameter
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var request *operations.GetCVEListRequestBody = &operations.GetCVEListRequestBody{
         CveIds: []string{
             "CVE-2019-5953",
         },
-        OnlyScore: ruddergo.Bool(true),
-        MinScore: ruddergo.String("7.5"),
-        MaxScore: ruddergo.String("8.5"),
+        OnlyScore: rudder.Bool(true),
+        MinScore: rudder.String("7.5"),
+        MaxScore: rudder.String("8.5"),
     }
     ctx := context.Background()
     res, err := s.Cve.GetCVEList(ctx, request)
@@ -314,18 +314,18 @@ Update CVE database from remote source
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/operations"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var request *operations.UpdateCVERequestBody = &operations.UpdateCVERequestBody{
-        URL: ruddergo.String("https://nvd.nist.gov/feeds/json/cve/1.1"),
+        URL: rudder.String("https://nvd.nist.gov/feeds/json/cve/1.1"),
         Years: []string{
             "2019",
         },
@@ -366,14 +366,14 @@ Update CVE database from file system
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -411,14 +411,14 @@ Get a CVE details
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var cveID string = "CVE-2022-25235"
     ctx := context.Background()

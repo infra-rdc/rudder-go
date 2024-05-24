@@ -1,4 +1,4 @@
-package ruddergo
+package rudder
 
 import (
 	"bytes"

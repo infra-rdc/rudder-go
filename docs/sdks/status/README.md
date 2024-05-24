@@ -21,13 +21,13 @@ An unauthenticated API to check if Rudder web application is up and running. Be 
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New()
+    s := rudder.New()
 
     ctx := context.Background()
     res, err := s.Status.None(ctx)

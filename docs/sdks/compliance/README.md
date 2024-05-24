@@ -25,16 +25,16 @@ Get current global compliance of a Rudder server
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
-    var precision *int64 = ruddergo.Int64(0)
+    var precision *int64 = rudder.Int64(0)
     ctx := context.Background()
     res, err := s.Compliance.GetGlobalCompliance(ctx, precision)
     if err != nil {
@@ -71,14 +71,14 @@ Get current compliance of all the nodes of a Rudder server
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -116,18 +116,18 @@ Get current compliance of a directive of a Rudder server
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var directiveID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
 
-    var format *string = ruddergo.String("<value>")
+    var format *string = rudder.String("<value>")
     ctx := context.Background()
     res, err := s.Compliance.GetDirectiveComplianceID(ctx, directiveID, format)
     if err != nil {
@@ -165,18 +165,18 @@ Get current compliance of all the nodes of a Rudder server
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
-    var level *int64 = ruddergo.Int64(4)
+    var level *int64 = rudder.Int64(4)
 
-    var precision *int64 = ruddergo.Int64(0)
+    var precision *int64 = rudder.Int64(0)
     ctx := context.Background()
     res, err := s.Compliance.GetNodesCompliance(ctx, level, precision)
     if err != nil {
@@ -214,20 +214,20 @@ Get current compliance of a node of a Rudder server
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var nodeID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
 
-    var level *int64 = ruddergo.Int64(4)
+    var level *int64 = rudder.Int64(4)
 
-    var precision *int64 = ruddergo.Int64(0)
+    var precision *int64 = rudder.Int64(0)
     ctx := context.Background()
     res, err := s.Compliance.GetNodeCompliance(ctx, nodeID, level, precision)
     if err != nil {
@@ -266,18 +266,18 @@ Get current compliance of all the rules of a Rudder server
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
-    var level *int64 = ruddergo.Int64(4)
+    var level *int64 = rudder.Int64(4)
 
-    var precision *int64 = ruddergo.Int64(0)
+    var precision *int64 = rudder.Int64(0)
     ctx := context.Background()
     res, err := s.Compliance.GetRulesCompliance(ctx, level, precision)
     if err != nil {
@@ -315,20 +315,20 @@ Get current compliance of a rule of a Rudder server
 package main
 
 import(
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"context"
 	"log"
 )
 
 func main() {
-    s := ruddergo.New(
-        ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    s := rudder.New(
+        rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
     var ruleID string = "9a1773c9-0889-40b6-be89-f6504443ac1b"
 
-    var level *int64 = ruddergo.Int64(4)
+    var level *int64 = rudder.Int64(4)
 
-    var precision *int64 = ruddergo.Int64(0)
+    var precision *int64 = rudder.Int64(0)
     ctx := context.Background()
     res, err := s.Compliance.GetRuleCompliance(ctx, ruleID, level, precision)
     if err != nil {

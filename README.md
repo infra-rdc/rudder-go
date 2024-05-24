@@ -18,13 +18,13 @@ package main
 
 import (
 	"context"
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"log"
 )
 
 func main() {
-	s := ruddergo.New(
-		ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+	s := rudder.New(
+		rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 
 	ctx := context.Background()
@@ -262,14 +262,14 @@ package main
 import (
 	"context"
 	"errors"
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"github.com/infra-rdc/rudder-go/models/sdkerrors"
 	"log"
 )
 
 func main() {
-	s := ruddergo.New(
-		ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+	s := rudder.New(
+		rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 	var parameterID string = "rudder_file_edit_header"
 	ctx := context.Background()
@@ -311,14 +311,14 @@ package main
 
 import (
 	"context"
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"log"
 )
 
 func main() {
-	s := ruddergo.New(
-		ruddergo.WithServerIndex(0),
-		ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+	s := rudder.New(
+		rudder.WithServerIndex(0),
+		rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 
 	ctx := context.Background()
@@ -342,14 +342,14 @@ package main
 
 import (
 	"context"
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"log"
 )
 
 func main() {
-	s := ruddergo.New(
-		ruddergo.WithServerURL("https://rudder.example.local/rudder/api/latest"),
-		ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+	s := rudder.New(
+		rudder.WithServerURL("https://rudder.example.local/rudder/api/latest"),
+		rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 
 	ctx := context.Background()
@@ -411,13 +411,13 @@ package main
 
 import (
 	"context"
-	ruddergo "github.com/infra-rdc/rudder-go"
+	rudder "github.com/infra-rdc/rudder-go"
 	"log"
 )
 
 func main() {
-	s := ruddergo.New(
-		ruddergo.WithSecurity("<YOUR_API_KEY_HERE>"),
+	s := rudder.New(
+		rudder.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 
 	ctx := context.Background()
