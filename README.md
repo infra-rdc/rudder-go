@@ -1,4 +1,4 @@
-# Golang SDK for Rudder.io
+![](src/img/logo.png)
 
 <!-- Start SDK Installation [installation] -->
 ## Installation
